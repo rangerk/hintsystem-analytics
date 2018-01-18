@@ -1,0 +1,8 @@
+#sudo rm -r src
+#mkdir src
+#sudo cp -r ./*.js ./src/
+
+rm -r build/static/js
+npm run build
+rm ../bundle.js
+cp build/static/js/*.js ../bundle.js
